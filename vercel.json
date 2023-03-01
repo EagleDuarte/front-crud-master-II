@@ -1,0 +1,16 @@
+{
+    "name": "api-crud--master-II",
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/index.ts",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "src/server.ts"
+      }
+    ]
+  }
